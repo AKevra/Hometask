@@ -24,6 +24,10 @@
     border: 2px solid #ffffff;
     padding: 13px 30px; 
 }
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -43,7 +47,7 @@ header {
     padding-bottom: 22px;
     padding-top: 22px;
 }
-.Navigation {
+.navigation {
     display: flex;
     justify-content: space-between;
     width: 445px;
@@ -51,13 +55,18 @@ header {
     padding-bottom: 29px;
 
 }
-.Navigation_href {
+.navigation_href {
     font-size: 14px;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     text-align: right;
     text-decoration: none;
+}
+.navigation_href:hover {
+    font-size: larger;
+    transform: scaleY(1.2);
+    color: #ff9b51
 }
 /*Styles for main section*/
 .main {
@@ -73,7 +82,7 @@ header {
     width: 50%;
 }
 
-.Big_logo {
+.big_logo {
     width: 175px;
     height: 60px;
     padding: 33px 0;
@@ -99,9 +108,7 @@ header {
     bottom: -36px;
 }
 
-form {
-    width: 360px;
-}
+
 .input_header {
     background-color: #f5f5f5;
     padding: 20px 5px 15px;
@@ -110,6 +117,8 @@ form {
     color: #333333;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .free {
     color: #fd9f5c;
@@ -128,8 +137,10 @@ input {
     border-style: none;
     border-bottom: 1px solid #d6d6d6;
     width: 285px; 
-    height: 20px;
-    
+    height: 20px;  
+}
+input:focus {
+  outline: initial;
 }
 ::placeholder {
     font-size: 14px;
@@ -145,10 +156,16 @@ button {
     font-weight: 600;
     padding: 22px 5px;
     width: 360px;
+    border-style: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
-
+button:hover {
+    font-size: larger;
+    
+}
 /*Styles For Social_Media row*/
-.Brand_bar {
+.brand_bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -157,18 +174,18 @@ button {
     filter: drop-shadow(0px 1px 1.5px rgba(0,0,0,0.38));
     background-color: #ffffff;
 }
-.SM_text {
+.sm_text {
     width: 34%;
     margin-right: 88px;
 }
-.SM_text h3 {
+.sm_text h3 {
     font-size: 20px;
     color: #333333;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin-bottom: 14px;
 }
-.SM_text p {
+.sm_text p {
     font-size: 14px;
     line-height: 20px;
     color: #86878b;
@@ -249,7 +266,7 @@ img {
     background-color: #f5f5f5;
     padding: 102px 145px 95px;
 }
-.Price_Blocks {
+.price_blocks {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -295,10 +312,10 @@ img {
     font-family: "Raleway-Regular";
     font-weight: 700;
 }
-.Third_row {
+.third_row {
     background-color: #303030;    
 }
-.Third_row p {
+.third_row p {
     font-size: 14px;
     line-height: 24px;
     font-style: italic;
@@ -307,11 +324,11 @@ img {
     font-weight: 600;
     padding: 17px 5px 23px;
 }
-.Orange_row {
+.orange_row {
     background-color: #ff8c2c;
     border-bottom: 5px solid #ff8c2c;
 }
-.Orange_row_spesial p {
+.orange_row_spesial p {
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;
@@ -398,11 +415,15 @@ img {
      border-style: none;
      border-bottom: 1px solid #d6d6d6;
      padding: 3px 3px;    
- }
+}
+ textarea:focus {
+    outline: initial;
+}
 .contact_us button {
     width: 145px;
     height: 50px;
     padding: 16px 2px;
+    border-style: none;
 }
 .btn_end {
     font-family: 'Open Sans', sans-serif;
@@ -410,6 +431,7 @@ img {
     color: #ffffff;
     text-decoration: none;
     text-align: center;
+    border-radius: 0;
   
 }
 /*Styles FOOTER*/
@@ -448,7 +470,7 @@ a.pinterest {
 a.instagram { 
     background-position: -184px 0px;
 }
-a.Porabola { 
+a.porabola { 
     background-position: -230px 0px;
 }
 a.WiFi { 
