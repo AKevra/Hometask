@@ -44,8 +44,9 @@ header {
 .logo {
     width: 80px;
     height: 27px;
-    padding-bottom: 22px;
-    padding-top: 22px;
+    padding: 22px 0;
+    margin-bottom: 22px;
+    
 }
 .navigation {
     display: flex;
@@ -86,6 +87,7 @@ header {
     width: 175px;
     height: 60px;
     padding: 33px 0;
+    margin-bottom: 40px;
   
 }
 .main .one_part .download_section {
@@ -108,7 +110,9 @@ header {
     bottom: -36px;
 }
 
-
+.second_part {
+    width: 40%;
+}
 .input_header {
     background-color: #f5f5f5;
     padding: 20px 5px 15px;
@@ -125,27 +129,47 @@ header {
     text-transform: uppercase;
    
 }
+
 .input_row {
     background-color: #ffffff;
+    position: relative;
     padding: 40px 38px 0px;
    
 }
+label {
+    position: absolute;
+    font-size: 14px;
+    color: #bdbdbd;
+    font-family: "Open Sans";
+    font-weight: 400;
+    left: 13px;
+   
+}
+.second_part label {
+    position: absolute;
+    left: 48px;
+}
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #ff8b38;
+}
+input:focus + label {
+    color: #ff8b38;
+    top: 15px;
+}
+
 .input_row .password {
     margin-bottom: 45px;
 }
 input {
     border-style: none;
     border-bottom: 1px solid #d6d6d6;
-    width: 285px; 
-    height: 20px;  
-}
-input:focus {
-  outline: initial;
+    width: 100%; 
 }
 ::placeholder {
     font-size: 14px;
     color: #bdbdbd;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans";
     font-weight: 400;
 }
 button {
@@ -155,7 +179,7 @@ button {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     padding: 22px 5px;
-    width: 360px;
+    width: 100%;
     border-style: none;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -170,20 +194,19 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     padding: 22px 150px;
-    height: 105px;
-    filter: drop-shadow(0px 1px 1.5px rgba(0,0,0,0.38));
+    box-shadow: 1px 1px 1.5px rgba(0,0,0,0.38);
     background-color: #ffffff;
 }
 .sm_text {
     width: 34%;
-    margin-right: 88px;
 }
 .sm_text h3 {
     font-size: 20px;
     color: #333333;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
+   
 }
 .sm_text p {
     font-size: 14px;
@@ -261,6 +284,55 @@ img {
     color: #333333;
     margin-bottom: 30px;
 }
+/*styles for tab_section*/
+.tab_section{
+    background-color: #f5f5f5;
+}
+.tab_size{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding: 0rem;
+}
+.tab_item {
+    background-color: #333333;
+}
+.tab_section .row .top_button {
+    border-radius: 5px 5px 0px 0px;
+}
+.tab_section .row .bottom_button{
+    border-radius: 0px 0px 5px 5px;
+}
+
+.tab_list .tab_item {
+    text-transform: uppercase;
+    padding: 45px 5px;
+    text-align: center;
+    border-top: 1px solid #f5f5f5;
+    transition: 0.5s;
+}
+.tab_list .tab_item p{
+    font-size: 14px;
+}
+.tab_list .tab_item{
+    border-radius: 0rem;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #ff8b38;
+    border-color: #ff8b38;
+}
+.button_download {
+    background-color: #ff8b38;
+    border-color: #ff8b38;
+}
+.text .title {
+    margin-bottom: 60px;
+}
+.text p {
+    margin-bottom: 30px;
+}
+
 /*styles for Pricing_section*/
 .pricing_table {
     background-color: #f5f5f5;
@@ -323,10 +395,12 @@ img {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     padding: 17px 5px 23px;
+    margin-bottom: 0rem;
 }
 .orange_row {
-    background-color: #ff8c2c;
-    border-bottom: 5px solid #ff8c2c;
+    padding: 2.5px 5px;
+    background-color: #ff8b38;
+    border-top: none;
 }
 .orange_row_spesial p {
     font-size: 14px;
@@ -335,7 +409,7 @@ img {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 15px 5px 10px;
+    padding: 8px 0;
 }
 .description {
     background-color: #ffffff;
@@ -350,7 +424,58 @@ img {
   text-transform: uppercase;
   border-bottom: 1px solid #f5f5f5;
 }
-    
+ /*styles for testimonial section*/
+ .testimotional_section {
+     padding: 110px 150px 100px;
+ }
+.testimonial p {
+    background-color: #f5f5f5;
+    position: relative;
+    padding: 25px 12px;
+    margin-bottom: 25px;
+
+}
+.testimonial p::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0; 
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #f5f5f5;
+    left: 20px;
+    bottom: -18px;
+   
+}
+ .customer {
+     display: flex;
+     justify-content: left;
+     text-align: left;
+ }
+ .avatar img {
+     width: 70px;
+     height: 70px;
+     margin-bottom: 0;
+     border-radius: 50%;
+     overflow: hidden;
+ }
+ .customer_inf {
+     width: 50%;
+     padding-left: 15px;
+ }
+ .customer_inf .title {
+    margin-bottom: 4px;
+ }
+ .position {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; 
+    color: #86878b;
+ }
+
+
+
 /*styles for download_section*/
 .download_section{
     background-image: url(..//img/background_img.png);
@@ -431,7 +556,9 @@ img {
     color: #ffffff;
     text-decoration: none;
     text-align: center;
-    border-radius: 0;
+    border-radius: 5%;
+    width: 120px;
+    height: 45px;
   
 }
 /*Styles FOOTER*/

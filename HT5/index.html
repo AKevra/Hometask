@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
@@ -45,13 +46,16 @@
                        <p>Try Your <span class="free">free</span> Trial Today</p>
                     </div>
                      <div class="input_row">
-                        <input type="text" placeholder="Name" required>
+                        <input type="text"  required>
+                        <label for="Name">Name</label>
                      </div>
                      <div class="input_row">
-                        <input type="email" placeholder="Email" required>
-                     </div>
+                        <input type="email"  required>
+                        <label for="email">Email</label>
+                    </div>
                      <div class="input_row">
-                        <input type="password" class="password" placeholder="Password" required>
+                        <input type="password" class="password"  required>
+                        <label for="password">Password</label>
                      </div>
                     <button type="submit">Get Started</button>
                     </form>
@@ -72,6 +76,118 @@
                 <a href="#" class="fa fa-stumbleupon" aria-hidden="true"></a>
                 <a href="#" class="fa fa-rss" aria-hidden="true"></a>
                 </div>
+        </section>
+        <section class="tab_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-1 col-md-1 col-sm-6 tab_list tab_size">
+                        <div class="list-group" id="myList" role="tablist" aria-orientation="vertical">
+                        <a class="list-group-item list-group-item-action active tab_item top_button tab_size" data-toggle="list" href="#home" role="tab">
+                            Tab1
+                        </a>
+                        <a class="list-group-item list-group-item-action tab_item tab_size" data-toggle="list" href="#profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                            Tab 2  
+                        </a>
+                        <a class="list-group-item list-group-item-action tab_item bottom_button tab_size" data-toggle="list" href="#messages" role="tab">
+                            Tab 3 
+                        </a>
+                        
+                      </div>
+                    </div>
+                    <div class="col-9 tab_size">
+                      <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="offset-md-1 col-xl-7 col-lg-7 col-md-12 col-sm-12 tabs_text tab_size">
+                                        <div class="text">
+                                        <p class="title">
+                                        Tabs with soft transitioning effect.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                            penatibus et magnis dis parturient montes.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                         bibendum laoreet.
+                                        </p>
+                                        </div>
+        
+                                        <a class=" btn button_download" href="#" role="button">Download</a>
+                                    
+        
+                                    </div>
+                                    <div class="offset-md-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 city_tabs tab_size">
+                                        <img src="./img/city_img.png" alt="city">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="profile" role="tabpanel"  aria-labelledby="v-pills-profile-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="offset-md-1 col-xl-7 col-lg-7 col-md-12 col-sm-12 tabs_text tab_size">
+                                        <div class="text">
+                                        <p class="title">
+                                        Tabs with soft transitioning effect.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                            penatibus et magnis dis parturient montes.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                         bibendum laoreet.
+                                        </p>
+                                        </div>
+        
+                                        <a class=" btn button_download" href="#" role="button">Download</a>
+                                    
+        
+                                    </div>
+                                    <div class="offset-md-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 city_tabs tab_size">
+                                        <img src="./img/city_img.png" alt="city">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="messages" role="tabpanel"  aria-labelledby="v-pills-messages-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="offset-md-1 col-xl-7 col-lg-7 col-md-12 col-sm-12 tabs_text tab_size">
+                                        <div class="text">
+                                        <p class="title">
+                                        Tabs with soft transitioning effect.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                            penatibus et magnis dis parturient montes.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                         bibendum laoreet.
+                                        </p>
+                                        </div>
+        
+                                        <a class=" btn button_download" href="#" role="button">Download</a>
+                                    
+        
+                                    </div>
+                                    <div class="offset-md-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 city_tabs tab_size">
+                                        <img src="./img/city_img.png" alt="city">
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
         </section>
         <section>
             <div class="section_header">
@@ -119,22 +235,22 @@
                        <p></p>
                    </div> 
                     <div class="description">
-                        <div class="row">
+                        <div class="description_row">
                             <p>1 gb of space</p>
                         </div>
-                        <div class="row">
+                        <div class="description_row">
                             <p>10 gb of bandwidth</p>
                         </div>
-                        <div class="row">
+                        <div class="description_row">
                             <p>3 websites</p>
                         </div>
-                        <div class="row">
+                        <div class="description_row">
                             <p>basic customization</p>
                         </div>
-                        <div class="row">
+                        <div class="description_row">
                             <p> wordpress integration </p>
                         </div>
-                        <div class="row">
+                        <div class="description_row">
                             <p>email support</p>
                         </div>
                     </div>
@@ -156,22 +272,22 @@
                             </span>
                        </div> 
                         <div class="description">
-                            <div class="row">
+                            <div class="description_row">
                                 <p>5 gb of space</p>
                             </div>
-                            <div class="row">
+                            <div class="description_row">
                                 <p>15 gb of bandwidth</p>
                             </div>
-                            <div class="row">
+                            <div class="description_row">
                                 <p>12 websites</p>
                             </div>
-                            <div class="row">
+                            <div class="description_row">
                                 <p>advanced customization</p>
                             </div>
-                            <div class="row">
+                            <div class="description_row">
                                 <p> wordpress integration </p>
                             </div>
-                            <div class="row">
+                            <div class="description_row">
                                 <p>email support</p>
                             </div>
                         </div>
@@ -191,27 +307,79 @@
                                <p></p>
                            </div> 
                             <div class="description">
-                                <div class="b5">
+                                <div class="description_row">
                                     <p>unlimited space</p>
                                 </div>
-                                <div class="b6">
+                                <div class="description_row">
                                     <p>unlimited bandwidth</p>
                                 </div>
-                                <div class="b7">
+                                <div class="description_row">
                                     <p>100 websites</p>
                                 </div>
-                                <div class="b8">
+                                <div class="description_row">
                                     <p>advanced customization</p>
                                 </div>
-                                <div class="b9">
+                                <div class="description_row">
                                     <p> wordpress integration </p>
                                 </div>
-                                <div class="b10">
+                                <div class="description_row">
                                     <p>24/7 customer support</p>
                                 </div>
                             </div>
                     </div>
              </div>
+        </section>
+        <section class="testimotional_section">
+            <div class="section_header">
+                <h2>What our customers are saying</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> 
+            </div>
+            <div class="blocks">
+                <div class="one_block">
+                    <div class="testimonial"><p>Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Doloribus 
+                        accusamus expedita repellat similique 
+                        odio aspernatur ex, architecto eaque 
+                        quo suscipit.</p>
+                    </div>
+                    <div class="customer">
+                        <img class="avatar" src="./img/avatar.png" alt="avatar">
+                        <div class="customer_inf">
+                            <p class="title">Jeremy H.</p>
+                            <p class="position">Manager</p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="one_block">
+                    <div class="testimonial"><p>Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Doloribus 
+                        accusamus expedita repellat similique 
+                        odio aspernatur ex, architecto eaque 
+                        quo suscipit.</p>
+                    </div>
+                    <div class="customer">
+                        <img class="avatar" src="./img/avatar.png" alt="avatar">
+                        <div class="customer_inf">
+                            <p class="title">John S.</p>
+                            <p class="position">Freelancer</p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="one_block">
+                    <div class="testimonial"><p>Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Doloribus 
+                        accusamus expedita repellat similique 
+                        odio aspernatur ex, architecto eaque 
+                        quo suscipit.</p>
+                    </div>
+                    <div class="customer">
+                        <img class="avatar" src="./img/avatar.png" alt="avatar">
+                        <div class="customer_inf">
+                            <p class="title">Susan W.</p>
+                            <p class="position">Photographer</p>
+                        </div>  
+                    </div>
+                </div>
         </section>
         <section id="reviews" class="download_section"> 
             <div class="section_header">
@@ -229,16 +397,19 @@
             </div>
             <form action="" class="contact_body">
                 <div class="contact_details">
-                    <div class="input_row">
-                        <input type="text" placeholder="Name" required>
-                    </div>
-                    <div class="input_row">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="input_row">
-                        <input type="text" placeholder="Subject" required>
-                    </div>
-                </div>
+                            <div class="input_row">
+                                <input type="text">
+                                <label for="">Name</label>
+                            </div>
+                            <div class="input_row">
+                                <input type="email">
+                                <label for="">Email</label>
+                            </div>
+                            <div class="input_row">
+                                <input type="text">
+                                <label for="">Subjet</label>
+                            </div>
+                </div>       
                 <div class="textarea">
                     <textarea name="Message" placeholder="Message" id="" cols="30" rows="10"></textarea>
                 </div>
@@ -260,6 +431,12 @@
             <p>© 2015 Axure Theme</p> 
         </footer>  
     </div>
-    
+ <script>
+        $(function () {
+          $('#myList a:last-child').tab('show')
+        })
+</script>    
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>    
 </body>
 </html>
