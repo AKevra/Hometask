@@ -1,0 +1,30 @@
+@import "vars";
+@import "mixins";
+@import "./blocks/head_section.less";
+@import "fonts";
+html { font-size: 80% } 
+
+.container_fluid {
+    max-width: 1900px;
+}
+.container {
+    max-width: 1170px;
+  
+}
+.btn {
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #ffffff;
+    font-family: "Raleway-Regular";
+    font-weight: 600;
+    text-align: center;
+    background-color: @btn_bg;
+}
+.btn_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
