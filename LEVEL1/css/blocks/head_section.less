@@ -6,6 +6,27 @@
         border-bottom: 1px solid #4f5268;
         
     }
+    .logo {
+        height: 40px;
+        width: 200px;
+
+        @media @breakpoint-desktop {
+            width: 80%;
+            height: 80%;
+       }
+       @media @breakpoint-medium {
+            width: 60%;
+            height: 60%; 
+       }
+       @media @breakpoint-small {
+            width: 40%;
+            height: 40%;
+       }
+       @media @breakpoint-extrasmall {
+            width: 30%;
+            height: 30%;
+       }
+    }
     .header_nav {
         display: flex;
         justify-content: space-between;
