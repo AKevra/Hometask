@@ -2,16 +2,13 @@
 // out: false
 
 .header  {
-    .cont_with_bg {
-    background-image: url(..//img/header_background.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    }
-   
     .header_row {
         border-bottom: 1px solid #4f5268;
         
+    }
+    .header_nav {
+        display: flex;
+        justify-content: space-between;
     }
     a {
         text-decoration: none;
@@ -21,16 +18,16 @@
         font-family: "Raleway-Regular";
         font-weight: 700;
         @media @breakpoint-desktop {
-            body{ font-size: 62.5% } 
+             font-size: 62.5%; 
         }
         @media @breakpoint-medium {
-            body { font-size: 56.3% } 
+             font-size: 56.3%; 
         }
         @media @breakpoint-small {
-            body { font-size: 50.3% }
+             font-size: 50.3%;
         }
         @media @breakpoint-extrasmall {
-            html { font-size: 50.3% }
+            font-size: 50.3%; 
         }
     }
     h2 {
@@ -41,17 +38,17 @@
         font-weight: 700;
         text-align: center;
         @media @breakpoint-desktop {
-            body{ font-size: 62.5% } 
-        }
-        @media @breakpoint-medium {
-            body { font-size: 56.3% } 
-        }
-        @media @breakpoint-small {
-            body { font-size: 50.3% }
-        }
-        @media @breakpoint-extrasmall {
-            html { font-size: 50.3% }
-        }
+            font-size: 4rem; 
+       }
+       @media @breakpoint-medium {
+            font-size: 3rem; 
+       }
+       @media @breakpoint-small {
+            font-size: 2rem;
+       }
+       @media @breakpoint-extrasmall {
+           font-size: 1rem; 
+       }
     }
     p {
         font-size: 1.7rem;
@@ -59,17 +56,17 @@
         color: #ffffff;
         font-family: "Raleway-Regular";
         text-align: center;
-        @media @breakpoint-desktop {
-            body{ font-size: 62.5% } 
-        }
-        @media @breakpoint-medium {
-            body { font-size: 56.3% } 
-        }
-        @media @breakpoint-small {
-            body { font-size: 50.3% }
-        }
-        @media @breakpoint-extrasmall {
-            html { font-size: 50.3% }
-        }
+        @media (@breakpoint-desktop) {
+            font-size: 1.2rem; 
+       }
+       @media (@breakpoint-medium) {
+            font-size: 1rem; 
+       }
+       @media (@breakpoint-small) {
+            font-size: 0.8rem;
+       }
+       @media @breakpoint-extrasmall {
+           font-size: 0.5rem; 
+       }
     }
 }   

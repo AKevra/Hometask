@@ -2,10 +2,17 @@
 @import "mixins";
 @import "./blocks/head_section.less";
 @import "fonts";
-html { font-size: 80% } 
+* {
+    margin: 0;
+    padding: 0;
+}
+html { font-size: 13px; } 
 
 .container_fluid {
     max-width: 1900px;
+    background-image: url(../img/header_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .container {
     max-width: 1170px;
