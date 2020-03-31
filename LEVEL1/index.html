@@ -1,58 +1,331 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-   <div class="container_fluid">
-        <header class="header">
-            <div class="container cont_with_bg">
-                <div class="row  header_row">
-                    <div class="col-xl-2 col-md-2 col-sm-12">
-                        <img class="logo" src="./img/Logo.png" alt="logo">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>LEVEL1</title>
+  </head>
+  <body>
+    <div class="main_container">
+        <section class="header_section">
+            <div class="container">
+                <header>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#" class="logo">
+                                <img src="./img/Logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <ul class="main_nav nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link active " href="#">Feature</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Works</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Our team</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Download</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                     <div class="col-xl-6 offset-xl-4 col-md-6 offset-md-4 col-sm-12">
-                        <nav class="nav  header_nav">
-                            <a class="nav-link active" href="#">Features</a>
-                            <a class="nav-link" href="#">Works</a>
-                            <a class="nav-link" href="#">Our team</a>
-                            <a class="nav-link" href="#">Testimonials</a>
-                            <a class="nav-link" href="#">Download</a>
-                        </nav>
-                     </div>
-                </div>
-                <div class="row second_row">
-                    <div class="col-xl-8 offset-xl-2 col-md-12 col-sm-12">
-                        <h2>Your favorite one page <br> multi porpose template</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
-                            vel scelerisque nisl consectetur et.</p>
-                        <div class="btn_header">
-                            <button class="btn">Find out more</button>
+                </header>
+                <div class="main_block">
+                    <div class="row">
+                        <div class="offset-1 col-10 ">
+                            <h1>Your Favorite One Page Multi Purpose Template</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
+                                vel scelerisque nisl consectetur et.</p>
+                            <a href="#" class="button">Find out more</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <section class="features">
+        </section>
+        <section class="features_section">
             <div class="container">
-                
+                <div class="row blocks">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 one_block">
+                        <img src="./img/easy_customized.png" alt="Easy customized">
+                        <p class="title">Easy customized</p>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor. </p>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 one_block">
+                        <img src="./img/responsive_ready.png" alt="Recponsive ready">
+                        <p class="title">Recponsive ready</p>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor.</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 one_block">
+                        <img src="./img/modern_design.png" alt="Modern design">
+                        <p class="title">Modern design</p>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor.</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 one_block">
+                        <img src="./img/clean_code.png" alt="Clean code">
+                        <p class="title">Clean code</p>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor.</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 one_block">
+                        <img src="./img/ready_to_ship.png" alt="Ready to ship">
+                        <p class="title">Ready to ship</p>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor.</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 one_block">
+                        <img src="./img/download_for_free.png" alt="Download for free">
+                        <p class="title">Download for free</p>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor.</p>
+                    </div>
+                </div>    
             </div>
+        </section>
+        <section class="works">
+            <div class="works_blocks">
+                <div class="one_work">
+                       <a href=""> <img src="./img/work1.png" alt="work"></a>
+                       <div class="one_work_hover">
+                            <div class="hover_text">
+                                <a href="#">
+                                    <p class="pr_name">Progect name</p>
+                                    <p>User interface Design </p>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="one_work">
+                    <img src="./img/work2.png" alt="work">
+                    <div class="one_work_hover">
+                        <div class="hover_text">
+                            <a href="#">
+                                <p class="pr_name">Progect name</p>
+                                <p>User interface Design </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_work">
+                    <img src="./img/work3.png" alt="work">
+                    <div class="one_work_hover">
+                        <div class="hover_text">
+                            <a href="#">
+                                <p class="pr_name">Progect name</p>
+                                <p>User interface Design </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_work">
+                    <img src="./img/work4.png" alt="work">
+                    <div class="one_work_hover">
+                        <div class="hover_text">
+                            <a href="#">
+                                <p class="pr_name">Progect name</p>
+                                <p>User interface Design </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="one_work">
+                    <img src="./img/work5.png" alt="work">
+                    <div class="one_work_hover">
+                        <div class="hover_text">
+                            <a href="#">
+                                <p class="pr_name">Progect name</p>
+                                <p>User interface Design </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_work">
+                    <img src="./img/work6.png" alt="work">
+                    <div class="one_work_hover">
+                        <div class="hover_text">
+                            <a href="#">
+                                <p class="pr_name">Progect name</p>
+                                <p>User interface Design </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_work">
+                    <img src="./img/work7.png" alt="work">
+                    <div class="one_work_hover">
+                        <div class="hover_text">
+                            <a href="#">
+                                <p class="pr_name">Progect name</p>
+                                <p>User interface Design </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_work">
+                    <img src="./img/work8.png" alt="work">
+                    <div class="one_work_hover">
+                        <div class="hover_text">
+                            <a href="#">
+                                <p class="pr_name">Progect name</p>
+                                <p>User interface Design </p>
+                            </a>
+                        </div>
+                    </div>   
+            </div>           
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="row team_block">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 member">
+                        <img src="./img/ruth_woods.png" alt="Team member">
+                        <p class="title">Ruth Woods</p>
+                        <p class="position">Founder, ceo</p>
+                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. </p>
+                        <div class="ref">
+                            <a href="#" class="fa fa-facebook icon" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-twitter icon" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-linkedin icon" aria-hidden="true"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 member">
+                        <img src="./img/timothy_reed.png" alt="Team member">
+                        <p class="title">Timothy Reed</p>
+                        <p class="position">Co-founder, developer</p>
+                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. </p>
+                        <div class="ref">
+                            <a href="#" class="fa fa-facebook icon" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-twitter icon" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-linkedin icon" aria-hidden="true"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 member">
+                        <img src="./img/victoria_valdez.png" alt="Team member">
+                        <p class="title">Victoria Valdez</p>
+                        <p class="position">UI designer</p>
+                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. </p>
+                        <div class="ref">
+                            <a href="#" class="fa fa-facebook icon" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-twitter icon" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-linkedin icon" aria-hidden="true"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 member">
+                        <img src="./img/beverly_little.png" alt="Team member">
+                        <p class="title">Beverly Little</p>
+                        <p class="position">data scientist</p>
+                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. </p>
+                        <div class="ref">
+                            <a href="#" class="fa fa-facebook icon" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-twitter icon" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-linkedin icon" aria-hidden="true"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" id="testimonials">
+            
+                <div class="testimonials__slider" id="testimonialsSlider">
+                    <div class="slick-item">
+                        <div class="testimonials__item">
+                            <div class="testimonials__photo">
+                                <img class="testimonials__img" src="./img/client.png" alt="">
+                            </div>
+                            <div class="testimonials__content">
+                                <div class="testimonials__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+                                <div class="testimonials__author">Susan Sims, Interaction Designer at XYZ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-item">
+                        <div class="testimonials__item">
+                            <div class="testimonials__photo">
+                                <img class="testimonials__img" src="./img/client.png" alt="">
+                            </div>
+                            <div class="testimonials__content">
+                                <div class="testimonials__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+                                <div class="testimonials__author">Susan Sims, Interaction Designer at XYZ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-item">
+                        <div class="testimonials__item">
+                            <div class="testimonials__photo">
+                                <img class="testimonials__img" src="./img/client.png" alt="">
+                            </div>
+                            <div class="testimonials__content">
+                                <div class="testimonials__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+                                <div class="testimonials__author">Susan Sims, Interaction Designer at XYZ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-item">
+                        <div class="testimonials__item">
+                            <div class="testimonials__photo">
+                                <img class="testimonials__img" src="./img/client.png" alt="">
+                            </div>
+                            <div class="testimonials__content">
+                                <div class="testimonials__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+                                <div class="testimonials__author">Susan Sims, Interaction Designer at XYZ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-item">
+                        <div class="testimonials__item">
+                            <div class="testimonials__photo">
+                                <img class="testimonials__img" src="./img/client.png" alt="">
+                            </div>
+                            <div class="testimonials__content">
+                                <div class="testimonials__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+                                <div class="testimonials__author">Susan Sims, Interaction Designer at XYZ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   
         </section>
 
 
+        
 
 
 
 
 
+
+
+
+
+    </div>
+
+
+
+ 
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
-   </div> 
-   <script src="./js/jquery-3.4.1.min.js"></script>
-   <script src="./js/bootstrap.min.js"></script>
-</body>
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./js/js.js"></script>
+  </body>
 </html>
